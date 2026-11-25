@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    color: #172554;
+}
+
+div {
+    padding: 20px;
+}
+
+h2 {
+    color: #172554;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #172554;
+    margin: 10px;
+}
+
+a:hover {
+    color: #2563eb;
+}
+
+
+#welcome {
+    background-color: #e0e7ff;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.welcome-content {
+    padding: 0;
+    flex: 1;
+}
+
+#welcome img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+#button {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+
+#about {
+    background-color: white;
+    padding: 40px;
+}
+
+
+#skills {
+    background-color: #e0e7ff;
+    text-align: center;
+}
+
+#skills div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#skills p {
+    background-color: white;
+    padding: 20px 35px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+#projects {
+    text-align: center;
+}
+
+#projects div {
+    display: inline-block;
+    width: 35%;
+    margin: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+#projects img {
+    width: 100%;
+    height: 120px;
+}
+
+
+#contact {
+    background-color: #e0e7ff;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+
+#footer {
+    background-color: #172554;
+    color: white;
+    text-align: center;
+}
+
+#footer a {
+    color: white;
+    margin: 10px;
+}
+
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    #welcome img {
+        display: block;
+        margin-top: 20px;
+        width: 200px;
+        height: 200px;
+    }
+
+    #welcome {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #projects div {
+        display: block;
+        width: auto;
+    }
+
+    #skills div {
+        flex-direction: column;
+    }
+}
